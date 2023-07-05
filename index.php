@@ -48,6 +48,7 @@ $hotels = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
     <div class="container .mt-4">
@@ -68,6 +69,11 @@ $hotels = [
                         <tr>
                             <td><?php echo $hotel['name'];?></td>
                             <td><?php echo $hotel['parking'] ? 'Si' : 'No';?></td>
+                            <td><?php echo $hotel['description'];?></td>
+                            <td><?php echo $hotel['vote'];?></td>
+                            <td><?php echo $hotel['distance_to_center'];?></td>
+
+
                         </tr>
                     <?php } ?>
                     </tbody>
