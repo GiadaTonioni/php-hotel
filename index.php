@@ -65,7 +65,7 @@ $hotels = [
                         </tr>
                     </thead>
                     <tbody>
-                    <?php foreach($hotel as $hotels){ ?>
+                    <?php foreach($hotels as $hotel){ ?>
                         <tr>
                             <td><?php echo $hotel['name'];?></td>
                             <td><?php echo $hotel['parking'] ? 'Si' : 'No';?></td>
